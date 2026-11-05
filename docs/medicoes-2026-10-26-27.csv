@@ -1,0 +1,24 @@
+data,hora,contexto,banda_pcc,banda_scc,rsrp_dbm,rssi_dbm,rsrq_db,sinr_db,qrsrp_cadeias,down_mbps,up_mbps,ping_ms,perda,nota
+2026-10-26,07:29,antena Wi-Fi ROG nos SMA,B3,B7,-104,-74,-9,17,"",,,,,QMI get-signal-info
+2026-10-26,07:32,antena Wi-Fi ROG nos SMA,B3,B7,-102,-71,-12,17,"-122,-111,-140,-140",,,,"salto -80/-91 nas cadeias 3/4"
+2026-10-26,07:33,antena Wi-Fi ROG nos SMA,B3,B7,-110,-84,-11,15,"-123,-108,-140,-140",,,,
+2026-10-26,07:36,antena Wi-Fi ROG nos SMA,B3,B7,-111,-85,-13,6,"-122,-111,-140,-140",,,,
+2026-10-26,07:40,antena Wi-Fi ROG nos SMA,B3,B7,-117,-87,-13,4,"",,,,
+2026-10-26,07:45,antena Wi-Fi ROG nos SMA,B3,B7,-111,-80,-13,6,"",3.5,,,download 20MB em 45s
+2026-10-26,07:47,antena Wi-Fi ROG nos SMA,B3,B7,,,,,,,fail,,,queda QMI "Failed to connect to service"
+2026-10-26,11:37,sem antenas externas,B3,B7,-85,-64,-10,23,"-88,-89,-78,-82",100,,36,0,download 50MB em 4s
+2026-10-26,11:37,sem antenas externas,B3,B7,-89,-60,-14,19,"",80,,,,
+2026-10-26,11:45,sem antenas externas,B3,B7,-87,-60,-9,17.8,"",,,,,
+2026-10-26,12:23,sem antenas externas,B3,B7,-90,-62,-11,22,"",100,,48,0,reboot: internet em 82s de uptime
+2026-10-26,13:20,sem antenas externas,B3,B7,,,,,121.1,13.9,,,teste telemovel (Wi-Fi 5GHz)
+2026-10-26,13:25,sem antenas externas,B3,B7,,,,,120.7,21.1,41,0,teste PC pelo cabo
+2026-10-26,13:30,sem antenas externas,B3,B7,,,,,127.6,20.5,,,teste telemovel (Wi-Fi 5GHz)
+2026-10-27,21:34,antenas externas do utilizador,B3,B7,-110,-78,-14,6.6,"-110,-115,-140,-140",,,,QRSRP so 2 cadeias
+2026-10-27,21:35,antenas externas do utilizador,B3,"B7,B8",-110,-79,-15,11,"-110,-115,-140,-140",,,,B8 a -125 dBm
+2026-10-27,21:35,antenas externas do utilizador,B3,B7,-110,-78,-15,13.6,"-109,-116,-90,-87",40,3,341,0,upload falhou (3 Mbps); ping max 753 ms
+2026-10-27,21:41,sem antenas (removidas),B7,B3,-101,-72,-12,18,"-97,-100,-140,-140",,,,
+2026-10-27,21:43,sem antenas (removidas),B3,B7,-93,-57,-13,15,"-94,-94,-140,-140",,,,
+2026-10-27,21:45,sem antenas (removidas),B7,B3,-97,-73,-14,17,"",44,8,56,0,speedtest.sh baseline
+2026-10-27,21:47,sem antenas (removidas),B7,B3,-94,-63,-16,9,"",44,11,50,0,speedtest.sh
+2026-10-27,22:45,sem antenas (removidas),,,,,,,,,,,execucao agendada perdida (router desligado)
+2026-10-27,23:45,sem antenas (removidas),,,,,,,,,,,execucao agendada perdida (router desligado)

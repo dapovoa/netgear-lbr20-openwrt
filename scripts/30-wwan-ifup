@@ -1,0 +1,6 @@
+#!/bin/sh
+# O device do modem apareceu no USB: entrega ao watchdog unico (/usr/bin/watch-router.sh).
+# Nao repetir aqui uqmi/ifup - o watchdog ja tem o lock, a escada e o registo, e duas
+# execucoes concorrentes de `uqmi --sync` deixam clientes QMI presos.
+[ "$INTERFACE" = "wwan0" ] || exit 0
+( sleep 6; /usr/bin/watch-router.sh ) &

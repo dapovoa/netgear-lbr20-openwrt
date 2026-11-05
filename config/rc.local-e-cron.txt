@@ -1,0 +1,16 @@
+# /etc/rc.local
+
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+for f in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do
+  echo ondemand > "$f" 2>/dev/null
+done
+
+( sleep 40; /usr/bin/watch-router.sh ) &
+( sleep 25; /usr/bin/ap-isolate.sh ) &
+service sysntpd restart
+exit 0
+
+# crontab:
+* * * * * /usr/bin/watch-router.sh

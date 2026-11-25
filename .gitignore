@@ -3,3 +3,8 @@ firmware/
 *.zip
 *.pdf
 backup/
+
+# Agent tooling (local; a wiki entra no repo)
+.pi/*
+!.pi/memory/
+.cursor/rules/00-agent-instructions.mdc
